@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnergyAU — Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to home page">
+        <img src="images/PowerIcon.png" alt="EnergyAU logo" class="brand-logo" />
+        <span class="brand-name">EnergyAU</span>
+      </a>
+      <nav class="nav-menu" aria-label="Primary navigation">
+        <button class="nav-link" data-link="index.html" data-page="home">Home</button>
+        <button class="nav-link" data-link="televisions.html" data-page="televisions">Televisions</button>
+        <button class="nav-link" data-link="about.html" data-page="about">About Us</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero home-hero">
+      <img src="images/hero-home-energy.png" alt="Home energy illustration" class="hero-bg" />
+      <div class="hero-overlay"></div>
+      <div class="container hero-content centered">
+        <p class="eyebrow">Australian Appliance Energy Data</p>
+        <h1>Understanding Home Energy Consumption</h1>
+        <p class="hero-text">Explore how household appliances in Australia consume electricity and what you can do to reduce your bill.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Annual Energy Consumption Trend</h2>
+          <p>Recorded energy usage from data.csv — 2020 to 2022.</p>
+        </div>
+        <div class="chart-card">
+          <div class="bars" aria-label="Energy units per year bar chart">
+            <div class="bar-wrap"><span class="bar-label">2020</span><div class="bar" style="height: 62%"><span>100</span></div></div>
+            <div class="bar-wrap"><span class="bar-label">2021</span><div class="bar" style="height: 75%"><span>120</span></div></div>
+            <div class="bar-wrap"><span class="bar-label">2022</span><div class="bar" style="height: 94%"><span>150</span></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Key Energy Facts — Australia</h2>
+          <p>National averages based on Australian household energy patterns.</p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card">
+            <strong>6,500</strong>
+            <span>kWh per household/year</span>
+            <p>Average annual residential usage.</p>
+          </article>
+          <article class="stat-card">
+            <strong>40%</strong>
+            <span>Heating & Cooling</span>
+            <p>Largest end-use category in many homes.</p>
+          </article>
+          <article class="stat-card">
+            <strong>33%</strong>
+            <span>Appliances & Equipment</span>
+            <p>Share of total household energy use.</p>
+          </article>
+          <article class="stat-card">
+            <strong>~30¢</strong>
+            <span>Per kWh</span>
+            <p>Typical electricity tariff assumption for examples.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container two-col">
+        <div>
+          <div class="section-header left-align">
+            <h2>Top Energy-Consuming Appliances</h2>
+            <p>Estimated costs based on a 30¢/kWh average tariff.</p>
+          </div>
+          <div class="table-card">
+            <table>
+              <thead>
+                <tr>
+                  <th>Appliance</th>
+                  <th>Typical Power</th>
+                  <th>Daily Use</th>
+                  <th>Annual Cost</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Air Conditioner</td><td>1,500 – 3,500 W</td><td>4 – 8 hrs</td><td>$220 – $520</td></tr>
+                <tr><td>Electric Hot Water</td><td>3,600 W</td><td>3 hrs</td><td>$400 – $600</td></tr>
+                <tr><td>Refrigerator</td><td>100 – 400 W</td><td>24 hrs</td><td>$50 – $110</td></tr>
+                <tr><td>Television (55″ OLED)</td><td>90 – 180 W</td><td>5 hrs</td><td>$25 – $50</td></tr>
+                <tr><td>Washing Machine</td><td>500 – 1,200 W</td><td>1 hr</td><td>$18 – $45</td></tr>
+                <tr><td>Dishwasher</td><td>1,200 – 2,400 W</td><td>1 hr</td><td>$30 – $65</td></tr>
+                <tr><td>Pool Pump</td><td>750 – 1,500 W</td><td>8 hrs</td><td>$110 – $220</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-header left-align">
+            <h2>Energy-Saving Tips</h2>
+            <p>Simple changes that make a real difference.</p>
+          </div>
+          <div class="tips-grid single-column">
+            <article class="tip-card">
+              <h3>Set Smart Thermostat Targets</h3>
+              <p>Every degree above 24°C in cooling can reduce energy use by 5–10%. Set heating to 20°C or below in winter.</p>
+            </article>
+            <article class="tip-card">
+              <h3>Choose High Star-Rated Appliances</h3>
+              <p>Each additional energy star rating can mean noticeably lower energy use over the appliance’s lifetime.</p>
+            </article>
+            <article class="tip-card">
+              <h3>Shift Load to Off-Peak</h3>
+              <p>Run dishwashers, washing machines and EV chargers overnight or during solar midday to cut costs.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Adhuham — COS30045 Data Visualisation</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
