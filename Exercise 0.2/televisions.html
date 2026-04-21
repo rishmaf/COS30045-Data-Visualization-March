@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EnergyAU — Televisions</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-page="televisions">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Go to home page">
+        <img src="images/PowerIcon.png" alt="EnergyAU logo" class="brand-logo" />
+        <span class="brand-name">EnergyAU</span>
+      </a>
+      <nav class="nav-menu" aria-label="Primary navigation">
+        <button class="nav-link" data-link="index.html" data-page="home">Home</button>
+        <button class="nav-link" data-link="televisions.html" data-page="televisions">Televisions</button>
+        <button class="nav-link" data-link="about.html" data-page="about">About Us</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero tv-hero">
+      <img src="images/hero-television-efficiency.png" alt="Television efficiency illustration" class="hero-bg" />
+      <div class="hero-overlay"></div>
+      <div class="container hero-content centered">
+        <p class="eyebrow">Appliance Spotlight</p>
+        <h1>Television Energy Efficiency</h1>
+        <p class="hero-text">Compare panel technologies and find out how much your TV is actually costing you each year.</p>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Panel Technology & Efficiency</h2>
+          <p>Different display technologies have significantly different energy profiles.</p>
+        </div>
+        <div class="stats-grid">
+          <article class="stat-card"><strong>OLED</strong><span>Most Efficient</span><p>Self-emitting pixels — no backlight required. Typically 80–120W for a 55″ screen.</p></article>
+          <article class="stat-card"><strong>QLED / QNED</strong><span>Very Efficient</span><p>Quantum dot LCD. Brighter than standard LED with moderate power draw.</p></article>
+          <article class="stat-card"><strong>Mini-LED</strong><span>Moderate</span><p>Better local dimming than standard LED, but higher power at large sizes.</p></article>
+          <article class="stat-card"><strong>Standard LED/LCD</strong><span>Least Efficient</span><p>Older technology with higher power consumption per inch.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2>2024 TV Energy Comparison — Australian Market</h2>
+          <p>Based on 5 hrs/day usage at 30¢/kWh. Star ratings shown as a simple placeholder.</p>
+        </div>
+        <div class="table-card wide-card">
+          <table>
+            <thead>
+              <tr>
+                <th>Brand Model</th>
+                <th>Type</th>
+                <th>Power (W)</th>
+                <th>Standby (W)</th>
+                <th>Stars</th>
+                <th>Annual Cost</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>LG OLED C4 55″</td><td>OLED</td><td>102</td><td>0.3</td><td>★★★★★★</td><td>$18.60</td></tr>
+              <tr><td>Samsung QN85D 55″</td><td>QLED</td><td>128</td><td>0.5</td><td>★★★★★★</td><td>$23.35</td></tr>
+              <tr><td>Sony X90L 65″</td><td>LED/LCD</td><td>158</td><td>0.5</td><td>★★★★★★</td><td>$28.83</td></tr>
+              <tr><td>TCL C845 65″</td><td>Mini-LED</td><td>175</td><td>0.5</td><td>★★★★★★</td><td>$31.94</td></tr>
+              <tr><td>Hisense U8K 75″</td><td>Mini-LED</td><td>230</td><td>0.5</td><td>★★★★★★</td><td>$41.98</td></tr>
+              <tr><td>Panasonic MZ1500 55″</td><td>OLED</td><td>98</td><td>0.3</td><td>★★★★★★</td><td>$17.89</td></tr>
+              <tr><td>Samsung The Frame 55″</td><td>QLED</td><td>86</td><td>0.5</td><td>★★★★★★</td><td>$15.69</td></tr>
+            </tbody>
+          </table>
+          <p class="table-note">Annual cost = power (kW) × 5 hrs/day × 365 days × $0.30. Standby cost excluded.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Buying a TV? Energy Considerations</h2>
+          <p>What to look for when shopping for an energy-efficient television.</p>
+        </div>
+        <div class="tips-grid">
+          <article class="tip-card"><h3>Check the Energy Rating Label</h3><p>More stars generally mean lower running cost for Australian televisions.</p></article>
+          <article class="tip-card"><h3>Size Matters for Power Draw</h3><p>A 75″ TV can use 2–3× more power than a 55″ equivalent. Only size up when you need it.</p></article>
+          <article class="tip-card"><h3>Watch Out for Standby Power</h3><p>TVs left on standby 24/7 can still add to your annual bill. Switch off at the power point when practical.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Adhuham — COS30045 Data Visualisation</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
